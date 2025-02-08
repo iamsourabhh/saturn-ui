@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), dts({ tsconfigPath: './tsconfig.app.json' })],
+  plugins: [react(), dts({ tsconfigPath: './tsconfig.lib.json' })],
 
   build: {
     lib: {

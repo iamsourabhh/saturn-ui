@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(), dts({ outDir: 'dist/types', insertTypesEntry: true })],
 
   build: {
+    sourcemap: true,
     lib: {
       entry: 'src/index.tsx',
       name: 'SaturnUi',

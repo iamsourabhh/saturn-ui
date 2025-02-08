@@ -20,6 +20,12 @@
   "main": "dist/saturn-ui.umd.js",
   "module": "dist/saturn-ui.es.js",
   "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "files": [
     "dist"
   ],
@@ -83,7 +89,7 @@
       "prettier --write"
     ]
   },
-  "author": "",
+  "author": "Sourabh Parmar <iamsourabhh@gmail.com> (https://github.com/iamsourabhh)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iamsourabhh/saturn-ui/issues"

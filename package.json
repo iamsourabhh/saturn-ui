@@ -1,8 +1,22 @@
 {
   "name": "saturn-ui",
-  "private": true,
-  "version": "0.0.1",
+  "description": "Saturn UI - A React component library focused on accessibility and performance.",
+  "version": "0.0.2-beta.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:iamsourabhh/saturn-ui.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "library",
+    "ui",
+    "design",
+    "system",
+    "accessibility",
+    "performance"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,7 +26,8 @@
     "build-storybook": "storybook build",
     "format": "prettier --write ."
   },
-  "dependencies": {
+  "dependencies": {},
+  "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -46,7 +61,8 @@
     "storybook": "^8.5.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
-    "vite": "^6.1.0"
+    "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0"
   },
   "eslintConfig": {
     "extends": [

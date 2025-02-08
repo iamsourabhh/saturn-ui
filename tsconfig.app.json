@@ -8,11 +8,15 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false, // Allow emitting declaration files
+    "emitDeclarationOnly": true, // Only emit type declarations
+    "declaration": true, // Generate .d.ts files
+    "declarationDir": "./dist/types", // Output directory for type declarations
+    "outDir": "./dist", // Output directory for transpiled files
     "jsx": "react-jsx",
 
     /* Linting */
@@ -20,7 +24,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "saturn-ui/*": ["src/*"]
+    }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "example", "tests"]
 }

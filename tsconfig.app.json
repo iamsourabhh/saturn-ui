@@ -8,15 +8,11 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": false, // Allow emitting declaration files
-    "emitDeclarationOnly": true, // Only emit type declarations
-    "declaration": true, // Generate .d.ts files
-    "declarationDir": "./dist/types", // Output directory for type declarations
-    "outDir": "./dist", // Output directory for transpiled files
+    "noEmit": true,
     "jsx": "react-jsx",
 
     /* Linting */
@@ -24,11 +20,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true,
-
-    "baseUrl": "."
+    "noUncheckedSideEffectImports": true
   },
-  "typeRoots": ["./dist/index.d.ts"],
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "example", "tests"]
+  "include": ["lib"]
 }

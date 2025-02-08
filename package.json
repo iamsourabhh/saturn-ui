@@ -17,13 +17,12 @@
     "accessibility",
     "performance"
   ],
-  "main": "dist/saturn-ui.umd.js",
-  "module": "dist/saturn-ui.es.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/saturn-ui.umd.cjs",
+  "module": "dist/saturn-ui.js",
   "exports": {
     ".": {
-      "import": "./dist/index.esm.js",
-      "require": "./dist/index.cjs.js"
+      "import": "./dist/saturn-ui.js",
+      "require": "./dist/saturn-ui.umd.cjs"
     }
   },
   "files": [
@@ -36,7 +35,9 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prebuild": "rm -rf dist",
+    "publish": "npm run build && npm publish"
   },
   "peerDependencies": {
     "react": "^19.0.0",
@@ -52,6 +53,7 @@
     "@storybook/react": "^8.5.3",
     "@storybook/react-vite": "^8.5.3",
     "@storybook/test": "^8.5.3",
+    "@types/node": "^22.13.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",

@@ -1,7 +1,7 @@
 {
   "name": "@iamsourabhh/saturn-ui",
   "description": "Saturn UI - A React component library focused on accessibility and performance.",
-  "version": "0.0.2-beta.5",
+  "version": "0.0.2-beta.6",
   "type": "module",
   "repository": {
     "type": "git",

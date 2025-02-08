@@ -1,11 +1,11 @@
 {
-  "name": "saturn-ui",
+  "name": "@iamsourabhh/saturn-ui",
   "description": "Saturn UI - A React component library focused on accessibility and performance.",
   "version": "0.0.2-beta.2",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git@github.com:iamsourabhh/saturn-ui.git"
+    "url": "git+ssh://git@github.com/iamsourabhh/saturn-ui.git"
   },
   "keywords": [
     "react",
@@ -17,6 +17,12 @@
     "accessibility",
     "performance"
   ],
+  "main": "dist/saturn-ui.umd.js",
+  "module": "dist/saturn-ui.es.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -26,7 +32,6 @@
     "build-storybook": "storybook build",
     "format": "prettier --write ."
   },
-  "dependencies": {},
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -77,5 +82,11 @@
     "*.{scss,css}": [
       "prettier --write"
     ]
-  }
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamsourabhh/saturn-ui/issues"
+  },
+  "homepage": "https://github.com/iamsourabhh/saturn-ui#readme"
 }

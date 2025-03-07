@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Meta } from '@storybook/react';
-import { applyPalette } from '../colors.utils';
+import { applyPalette } from '../utils/colors.utils';
 
 export default {
   title: 'Design System/Colors',

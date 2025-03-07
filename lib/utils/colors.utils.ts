@@ -35,6 +35,7 @@ export function applyPalette(color: string): void {
   const palette = generatePalette(color);
   const root = document.documentElement;
   console.log(palette);
+  root.style.setProperty('--color-primary', color);
   Object.entries(palette).forEach(([key, value]) => {
     root.style.setProperty(`--color-primary-${key}`, value);
   });

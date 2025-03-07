@@ -1,4 +1,4 @@
-import { applyPalette } from './colors.utils';
+import { applyPalette } from './utils/colors.utils';
 
 // Apply the palette to the root element
 applyPalette('#3498db');

@@ -1,3 +1,16 @@
 @forward 'abstracts/variables';
 @forward 'abstracts/functions';
 @forward 'abstracts/mixins';
+
+:root {
+  --color-text: #333;
+  --color-text-white: #fff;
+
+  // Button
+  --button-bg: var(--color-primary);
+  --button-bg-hover: var(--color-primary-300);
+  --button-bg-active: var(--color-primary-600);
+  --button-outline-focus-color: var(--color-primary-800);
+  --button-color: var(--color-text-white);
+  ----button-height: 2rem;
+}
